@@ -382,39 +382,6 @@ Result: ~8× reduction on reference data alone
 
 ---
 
-## Test Harness
-
-`vtx_test` drives both binaries through stdin pipes to verify five core properties:
-
-```bash
-./vtx_test           # run all tests
-./vtx_test dedup     # Test 1: same string → same Root ID
-./vtx_test sharing   # Test 2: shared prefix → fewer atoms
-./vtx_test decay     # Test 3: vault shrinks after 40 DREAM cycles
-./vtx_test persist   # Test 4: SAVE → LOAD → UNROLL recovers string
-./vtx_test export    # Test 5: vtxe round-trip recovers string
-./vtx_test bench     # BONUS: 100 ingests, timing per ingest
-```
-
-Expected output:
-
-```
-  VOLTEX TEST SUMMARY
-══════════════════════════════════════
-  PASS  Deduplication / Two ingests return a root ID
-  PASS  Deduplication / Both root IDs are identical       MATCH
-  PASS  Structural Sharing / Shared-prefix vault has fewer atoms
-  PASS  Vitality Decay / Vault population decreases after 40 cycles
-  PASS  Persistence / Original string recovered via UNROLL
-  PASS  Export Portability / String recovered from restored vault
-  PASS  Export Portability / vtxe is smaller than source meta
-  PASS  Throughput / 100 ingests in ~49ms  (0.49 ms/ingest)
-
-  19 passed  /  0 failed  /  19 total
-```
-
----
-
 ## File Reference
 
 | File | Description |
