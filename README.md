@@ -15,7 +15,7 @@
 [![OpenSSL](https://img.shields.io/badge/OpenSSL-SHA--256-green?style=flat-square)](https://www.openssl.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey?style=flat-square)]()
-
+[![Docs Link](https://docs.google.com/document/d/12156Tw6VUEI2nSMI4QplUAaXc1lYr6jo-bXNZCx-_I4/edit?usp=sharing)
 </div>
 
 ---
